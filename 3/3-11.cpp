@@ -49,5 +49,5 @@ int main()
 	else
 		std::cout << "You have " << f << " dollar\n";
 
-	std::cout << "The value of all of your coins is $" << sum / 100;
+	std::cout << "The value of all of your coins is $" << sum / 100;	
 }
