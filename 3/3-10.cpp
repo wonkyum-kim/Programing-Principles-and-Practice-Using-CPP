@@ -16,5 +16,5 @@ int main()
 	else if (operation == "/" || operation == "div")
 		std::cout << a / b;
 	else
-		std::cout << "잘못된 연산자";
+		std::cout << "잘못된 연산자";	
 }
