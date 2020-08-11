@@ -1,7 +1,7 @@
 #include <iostream>
 #include <vector>
 
-bool is_prime(int i)
+bool is_prime(const int i)
 {
 	if (i == 1)
 		return false;
