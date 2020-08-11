@@ -10,15 +10,15 @@ int main()
 	std::vector<int> numbers;
 
 	std::string name;
-	int age = 0;
+	int num = 0;
 
 	while (true)
 	{
-		std::cin >> name >> age;
+		std::cin >> name >> num;
 		if (!std::cin)
 			break;
 		names.push_back(name);
-		numbers.push_back(age);
+		numbers.push_back(num);
 	}
 
 	std::vector<std::string> temp = names;
@@ -31,5 +31,5 @@ int main()
 		return EXIT_FAILURE;
 	}
 	for (auto i = 0; i < names.size(); ++i)
-		std::cout << "name: " << names[i] << " " << "age: " << numbers[i] << '\n';
+		std::cout << "name: " << names[i] << " " << "score: " << numbers[i] << '\n';
 }
