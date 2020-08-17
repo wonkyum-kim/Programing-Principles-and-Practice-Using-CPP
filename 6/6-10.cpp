@@ -41,4 +41,4 @@ int main()
     }
     
     std::cout << ans;
-}
+}	
