@@ -116,8 +116,7 @@ double term()
 			if (d == 0) {
 				std::cerr << "divide by zero\n";
 				return EXIT_FAILURE;
-			}
-			left /= d;
+			}			left /= d;
 			t = ts.get();
 			break;
 		}
@@ -158,8 +157,9 @@ int main()
 	while (std::cin) {
 		Token t = ts.get();
 
-		if (t.kind == 'q') break; // 'q' for quit
-		if (t.kind == ';')        // ';' for "print now"
+		if (t.kind == 'q') 	// 'q' for quit
+			break; 		
+		if (t.kind == ';')      // ';' for "print now"
 			std::cout << "=" << val << '\n';
 		else
 			ts.putback(t);
